@@ -1,0 +1,239 @@
+
+/* set-up da página */
+
+body {
+  margin: 10px;
+  padding: 10px;
+  background-color: #fefefe;
+
+} 
+
+.secondary-color{
+  color: rgb(107, 107, 107);
+}
+
+.center-image{
+    /* fazer a imagem se adaptar ao tamanho da div, e centralizar*/
+    background-size: cover;
+    background-position: center;
+}
+
+.chamadas{
+  color: darkorange;
+}
+
+.texto{
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1rem, 1vw, 2rem);
+  text-align: left;
+}
+
+.texto-secundario{
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(0.7rem, 0.7vw, 1rem);
+  text-align: left;
+}
+.quadro-bege{
+  border-radius: 2%;
+  background-color: blanchedalmond;
+}
+
+.clicar{
+  font-family: sans-serif;
+  font-size: clamp(1rem, 1vw, 2rem);
+  text-align: center;
+}
+
+.clicar:hover{ 
+  color: darkorange;
+  border: 1px dashed darkorange;
+  border-radius: 70px;
+}
+
+.clicar-nav{
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1rem, 1vw, 2rem);
+  text-align: center;
+}
+
+.clicar-nav:hover{ 
+  /* border-bottom: 3px dashed darkorange; */
+  text-decoration: underline;
+  text-decoration-color: darkorange ;
+  text-decoration-style: solid;
+}
+
+.row-top{
+  border-top: 2px solid rgb(252, 230, 191);
+  padding-top: 2%;
+}
+
+.flutuar-d{
+  float: right;
+}
+
+.flutuar-e{
+  float: left;
+}
+
+/* ---lema:todas as paginas  --------------------------------------------- */
+.lema{
+  color:red;
+  font-family: 'Lato', sans-serif;
+  /* font-size: clamp( 3vw, 4vw, 6vw); */
+  font-size: clamp(3rem, 3vw, 6rem);
+  padding: 3% 0 2% 0;
+  /* line-height: 150%; */
+}
+
+/* ----- Banner:Home ------------------------- */
+.main-image {
+  height: 500px;
+  background-image: url('/img/Cat_Ilustration.png');
+  margin-bottom: 30px;
+  border-radius: 20px;
+
+  /* colocar esta div como relative , para servir de refefencia 
+  a div de info que ira se ajustar a div relative 
+  mais proxima  */
+  position: relative;
+}
+
+.main-image-info{
+  background-color: #FFF;
+  padding: 25px;
+  /* ajustando posicionamento da div */
+  /* sera tomada como base a relative mais proxima ( do banner ) */
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  opacity: 71%;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.btn-outline-secondary{
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+
+/* ----- Footer:todas as paginas --------------------*/
+
+footer{
+  text-align: center;
+  height: 200px;
+  padding: 15px;
+}
+
+footer p{
+  margin-top: 5px;
+}
+
+footer i{
+  font-size: clamp(1rem, 1vw, 2rem);
+}
+
+/* mudar cor dos icones rede sociais*/
+a:hover i{
+color: #c1b696;
+}
+
+
+/* ----- Em construção ------------------------- */
+.img-construcao{
+  height: 500px;
+  background-image: url('/img/construcao.jpg');
+  margin-bottom: 30px;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* ----- Doação:doc de Transparencia ------------------------- */
+.transparencia, #cor-link{
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(0.7rem, 0.7vw, 1rem);
+  text-align: center;
+  color: rgb(107, 107, 107);
+}
+.transparencia:hover, #cor-link:hover{
+  color: darkorange;
+  border: 1px dashed darkorange;
+  border-radius: 70px;
+}
+.icone{
+  text-align: center;
+}
+
+.bi-file-earmark-text{
+  font-size: clamp(3rem, 3vw, 6rem);
+}
+
+
+/* ----- Cadastro: inputs------------------------- */
+
+.pequeno{
+  font-size: small;
+}
+
+.entrada{
+  border: 0px;
+  border-bottom: 1px solid rgb(248, 169, 22);
+  background: rgb(243, 243, 241);
+  margin: 0 0 10px;
+}
+
+.botao{
+  
+  font-size: small;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  /* text-transform: uppercase; */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  color: rgb(248, 169, 22);
+  height: 100%;
+  width: 75%;
+  
+}
+
+.enviar_c{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: clamp(  0.7vw, 1vw, 1.5vw));
+} */
+
+/* ----- Contato ------------------------- */
+
+
+.formulario{
+
+  color:red;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp( 1vw, 3vw, 3vw);
+  text-align: center;
+  padding-top: 1%;
+  line-height: 70%;
+  margin-bottom: 3%;
+}
+
+.input-padrao {
+  font-family: 'Raleway', sans-serif;
+	display: block;
+	padding: 5px 10px;
+  background: linear-gradient(#FEFEFE, rgb(243, 243, 241), rgb(241, 243, 239));
+  border-radius: 5px; 
+}
+
+
+/* --- para teste de layout --------------------------------- */
+/* .row{
+  background-color: aqua; 
+  border-top: 1px solid rgb(252, 230, 191);
+  padding-top: 2%;
+}  */
+
+
+/* .container, .col-3, .col-4, .col-6, .col-8, .col-9,
+.col-md-4, .col-12, .col-md-8, .col-md-4{
+  border: 1px solid red;
+} */
