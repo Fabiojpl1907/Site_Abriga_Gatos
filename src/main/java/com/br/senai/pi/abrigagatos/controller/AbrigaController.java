@@ -80,11 +80,11 @@ public class AbrigaController {
     public String saveParceiro(@ModelAttribute("parceiro") Parceiro parceiro) {
         // salva parceiro no banco de dados
         parceiroService.saveParceiro(parceiro);
-        return "redirect:/index";
+        return "redirect:/listaParceiros";
     }
 
-
-    @GetMapping("/showFormForUpdate/{id}")
+//    showFormForUpdate
+    @GetMapping("/atualizarParceiro/{id}")
     public String showFormForUpdate(@PathVariable(value = "id") long id, Model model) {
 
         // pega parceiro do serviço
@@ -92,7 +92,7 @@ public class AbrigaController {
 
         // ajusta parceiro como atributo modelo  para preencher formulario
         model.addAttribute("parceiro", parceiro);
-        return "update_parceiro";
+        return "update_parceiros";
     }
 
     @GetMapping("/deleteParceiro/{id}")

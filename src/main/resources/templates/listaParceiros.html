@@ -39,7 +39,7 @@
             <td th:text="${parceiro.firstName}"></td>
             <td th:text="${parceiro.lastName}"></td>
             <td th:text="${parceiro.email}"></td>
-            <td><a class="btn btn-primary" th:href="@{/showFormForUpdate/{id}(id=${parceiro.id})}">Update</a>
+            <td><a class="btn btn-primary" th:href="@{/atualizarParceiro/{id}(id=${parceiro.id})}">Update</a>
                 <a class="btn btn-danger" th:href="@{/deleteParceiro/{id}(id=${parceiro.id})}">Delete</a>
             </td>
         </tr>
