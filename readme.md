@@ -1,22 +1,39 @@
 **Abriga Gatos - Projeto Integrador - Final** 
 
-Readme : Versão 1.0 - em construção 
 
-**Objetivo** : Criar site utilizando funcionalidades do Spring MVC dentro do modelo CRUD
 
-**Tecnologias utilizadas**
+<img src="https://s2.loli.net/2022/04/01/ZXzf2mxcRT6UvbO.png" alt="Abriga_Gatos" style="zoom:30%;" />
 
+Readme : Versão 1.1 - em construção 
+
+**Objetivo do Site** : Apresentar e gerir trabalhos de uma ONG cujo a ação é retirar gatos da rua , dando um lugar mais adequados a segurança de vidas dos animais. 
+
+**Objetivo** **do projeto** : Site criado para utilizar as várias técnicas e habilidades aprendidas durante o curso de Técnico de Informática em Internet (Full Stack) do SENAI  Anchieta . em São Paulo-SP
+
+**Repositório Git Hub** : https://github.com/Fabiojpl1907/Site_Abriga_Gatos
+
+**Técnicas e Tecnologias utilizadas** **durante o projeto** 
+
+- HTML
+-  Bootstrap 5 
+- CSS
+- JavaScript
 - Spring Boot 2.6.6
+
+- Modelo MVC
+- Modelo CRUD 
+- API REST 
 - Maven
 - Java 17
 - Thymeleaf
 - Spring Web
 - Spring Dev tools
 - Lombok
-- Mysql
+- Banco de Dados Mysql
 - JPA 
-- Tomcat
-- Intellij 
+- Web Server Tomcat
+- IDE Intellij Community 202103
+- Editor VSCode
 
 **Estrutura do Projeto** 
 
@@ -28,7 +45,7 @@ Readme : Versão 1.0 - em construção
 
 - Statics : Contem arquivos auxiliares a construção das views ( imagens , css, etc )
 
-- Repository : classe extende os metods de persistencia do JPA
+- Repository : classe extende os metodos de persistencia do JPA
 
   
 
@@ -43,7 +60,7 @@ Readme : Versão 1.0 - em construção
 **Persistencia de dados**
 
 - Uilizado o MySQL
-- Caso não exista o sistema cria o banco de dados "*abrigaGatos*" 
+- Caso não exista o sistema cria o banco de dados "*abrigaGatos*" e suas tabelas
 - Ajustar usuario  e senha para cessso ao SGBD no arquivo "*application.properties*" em src/main/resources/
 
 
