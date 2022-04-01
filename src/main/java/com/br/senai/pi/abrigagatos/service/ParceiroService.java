@@ -8,6 +8,7 @@ import java.util.List;
 
 
 public interface ParceiroService {
+
     List<Parceiro> getAllParceiros();
 
     void saveParceiro(Parceiro parceiro);

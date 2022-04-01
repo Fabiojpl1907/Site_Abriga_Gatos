@@ -60,13 +60,20 @@ public class AbrigaController {
     }
 
 
+    // listar parceiros
+    @GetMapping("/listaParceiros")
+    public String viewHomePage(Model model) {
+        return findPaginated(1, "firstName", "asc", model);
+    }
+
+
 //save parceiros
-    @GetMapping("/cadastro")
+    @GetMapping("/cadastroParceiros")
     public String showNewParceiroForm(Model model) {
     // cria atributo de modelo para vincular dados de formulário
     Parceiro parceiro = new Parceiro();
     model.addAttribute("parceiro", parceiro);
-    return "cadastro";
+    return "cadastroParceiros";
 }
 
     @PostMapping("/saveParceiro")
@@ -83,7 +90,7 @@ public class AbrigaController {
         // pega parceiro do serviço
         Parceiro parceiro = parceiroService.getParceiroById(id);
 
-        // ajusta parceiro como atributo modelo  pra preencher formulario
+        // ajusta parceiro como atributo modelo  para preencher formulario
         model.addAttribute("parceiro", parceiro);
         return "update_parceiro";
     }
@@ -104,7 +111,7 @@ public class AbrigaController {
         int pageSize = 5;
 
         Page<Parceiro> page = parceiroService.findPaginated(pageNo, pageSize, sortField, sortDir);
-        List<Parceiro> listEmployees = page.getContent();
+        List<Parceiro> listParceiros = page.getContent();
 
         model.addAttribute("currentPage", pageNo);
         model.addAttribute("totalPages", page.getTotalPages());
@@ -114,8 +121,8 @@ public class AbrigaController {
         model.addAttribute("sortDir", sortDir);
         model.addAttribute("reverseSortDir", sortDir.equals("asc") ? "desc" : "asc");
 
-        model.addAttribute("listEmployees", listEmployees);
-        return "index";
+        model.addAttribute("listParceiros", listParceiros);
+        return "listaParceiros";
     }
 
 

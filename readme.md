@@ -28,7 +28,7 @@ Readme : Versão 1.0 - em construção
 
 - Statics : Contem arquivos auxiliares a construção das views ( imagens , css, etc )
 
-- Repository : classe extends os metods de persistencia do JPA
+- Repository : classe extende os metods de persistencia do JPA
 
   
 
