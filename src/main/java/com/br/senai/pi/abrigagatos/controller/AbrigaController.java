@@ -38,6 +38,11 @@ public class AbrigaController {
         return "index";
     }
 
+    @GetMapping("/adm")
+    public String adm() {
+        return "adm";
+    }
+
 
     @GetMapping("/construcao")
     public String construcao() {
@@ -80,10 +85,9 @@ public class AbrigaController {
     public String saveParceiro(@ModelAttribute("parceiro") Parceiro parceiro) {
         // salva parceiro no banco de dados
         parceiroService.saveParceiro(parceiro);
-        return "redirect:/listaParceiros";
+        return "redirect:/parceiros";
     }
 
-//    showFormForUpdate
     @GetMapping("/atualizarParceiro/{id}")
     public String showFormForUpdate(@PathVariable(value = "id") long id, Model model) {
 
@@ -100,7 +104,7 @@ public class AbrigaController {
 
         // chama metodo de deleção de parceiro
         this.parceiroService.deleteParceiroById(id);
-        return "redirect:/index";
+        return "redirect:/listaParceiros";
     }
 
     @GetMapping("/page/{pageNo}")

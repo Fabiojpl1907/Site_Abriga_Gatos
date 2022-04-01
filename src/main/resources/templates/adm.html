@@ -52,22 +52,11 @@
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+
                     <li class="nav-item p-2">
-                        <a class="nav-link clicar-nav" aria-current="page" th:href="@{/construcao}" target="blank">Porque Abrigar</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link clicar-nav" aria-current="page" th:href="@{/parceiros}" target="blank">Parceiros</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link clicar-nav" aria-current="page" th:href="@{/doacao}" target="blank">Doações</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link clicar-nav" aria-current="page" th:href="@{/contato}" target="blank">Contatos</a>
+                        <a class="nav-link clicar-nav" aria-current="page" th:href="@{/listaParceiros}" target="blank">Gerenciar Parceiros</a>
                     </li>
 
-                   <li class="nav-item p-2">
-                        <a class="nav-link clicar-nav" aria-current="page" th:href="@{/construcao}" target="blank">Quem somos nós</a>
-                    </li>
 
                 </ul>
 
@@ -90,44 +79,6 @@
     </div>
 </div>
 
-<!-- ----- Saiba Mais ----------------------------------------------       -->
-<div class="container" id="main-image-container">
-    <div class="main-image center-image">
-        <div class="main-image-info">
-            <h2>Diga não ao Abandono</h2>
-            <button class="btn btn-outline-secondary btn-lg" onclick="abrirModal()">Saiba mais...</button>
-        </div>
-    </div>
-</div>
-
-
-<!-- ----- Janela Modal ----------------------------------------------       -->
-
-<div class="fundo_modal" id="mod">
-    <div class="mod container-fluid">
-        <div class="row citacao">
-            <texto>
-                “A maioria dos animais abandonados não é resgatada e sofre com fome,
-                doenças, exposição ao tempo, riscos de atropelamento e traumas que
-                interferem em seu bem-estar mental e comportamento”
-            </texto>
-            <fonte class="secondary-color">- Dra. Cristiane Pizzutto, presidente CTBEA/CRMV-SP</fonte><br>
-            <br><br>
-            <texto>
-                “O abandono impacta diretamente na vida das pessoas,
-                pois animais nas ruas causam acidentes de trânsito,
-                prejudicam o turismo e afetam a saúde pública –
-                devido às doenças que afetam tanto humanos quanto animais”
-            </texto>
-            <fonte class="secondary-color">- Dra. Rosangela Gebara, CTBEA/CRMV-SP</fonte>
-
-            <br><br>
-            <p>CTBEA: Comissão Técnica de Bem-estar Animal (CTBEA) do CRMV-SP</p>
-        </div>
-
-        <span class="sair" onclick="fecharModal()">X</span>
-    </div>
-</div>
 
 <!-- -----  Footer  -------------------- -->
 <footer class="container" id="social-icons-container">
