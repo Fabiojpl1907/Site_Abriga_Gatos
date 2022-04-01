@@ -2,7 +2,7 @@
 
 Readme : Versão 1.0 - em construção 
 
-**Objetivo** : Criar site utilizando funcionalidades do Spring MVC
+**Objetivo** : Criar site utilizando funcionalidades do Spring MVC dentro do modelo CRUD
 
 **Tecnologias utilizadas**
 
@@ -20,7 +20,17 @@ Readme : Versão 1.0 - em construção
 
 **Estrutura do Projeto** 
 
+- Controller : Contem metodos que recebe a pagina desejada pelo usuário  e mapeia para o arquivo html referente
 
+- Entity : Contem as classes que possue as entidade abstraidas ( Parceiros )  
+
+- Templates : Contem as view ( .html ) de apresentação ao usuário
+
+- Statics : Contem arquivos auxiliares a construção das views ( imagens , css, etc )
+
+- Repository : classe extends os metods de persistencia do JPA
+
+  
 
 **Acesso ao site** 
 
