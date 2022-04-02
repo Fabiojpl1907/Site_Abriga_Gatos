@@ -8,9 +8,56 @@ Readme : Versão 1.1 - em construção
 
 **Objetivo do Site** : Apresentar e gerir trabalhos de uma ONG cujo a ação é retirar gatos da rua , dando um lugar mais adequados a segurança de vidas dos animais. 
 
-**Objetivo** **do projeto** : Site criado para utilizar as várias técnicas e habilidades aprendidas durante o curso de Técnico de Informática em Internet (Full Stack) do SENAI  Anchieta . em São Paulo-SP
+**Objetivo** **do projeto** : Site em criação, utilizando as várias técnicas e habilidades aprendidas durante o curso de Técnico de Informática em Internet (Full Stack) do SENAI  Anchieta . em São Paulo-SP
 
 **Repositório Git Hub** : https://github.com/Fabiojpl1907/Site_Abriga_Gatos
+
+**Acesso ao site** 
+
+- Carregar projeto no Intellij ou em sua IDE preferida
+
+- Rodar a classe "*AbrigagatosApplication*" em *src/main/java/com/br/senai/pi/abrigagatos/*
+
+- No browse carregar para acesso publico - "*Localhost:8080/index"*
+
+- No browse carregar para acesso de administrador  - "*Localhost:8080/adm"*
+
+  
+
+**Estrutura do site**
+
+​	**User Interface** - parte do projeto pensada para ser acessada pelo cliente, parceiros e usuários
+
+​		*Index*  - Apresenta menu inicial com opções do site .
+
+​						apresenta um modal construido em javascript que traz o motivo de abrigar os gatos de rua. 
+
+​		*Parceiros* - apresenta informações sobre os parceiros.
+
+​				contem a funcionalidade Cadastro - para cadastro de parceiros desenvolvida em
+​																				 java/mvc/persistencia em banco de dados
+
+​		*Doações* - Pagina que apresenta as varias formas de doações que podem ser feitas . 
+
+​						Montada com  Modal do Bootstrap. 
+
+​		*Contato* - Apresenta formas de contato com Abriga Gatos 
+
+​						Formulario de contato desenvolvido em HTML ( <form> )
+
+​		*Quem somos* -  em construção - mostrará dados sobre a empresa
+
+​					no projeto tem a função de mostrar o conceito de aviso de páginas em construção
+
+​	
+
+​	**Administração** - parte do projeto pensada para a gestão da ONG 
+
+​		*Gerenciar Parceiros* - Apresenta listagem dos Parceiros cadastrados , 
+
+​		contem a funcionalidade  - para atualizar ou deletar desenvolvida em java/mvc/Banco de dados/JPA
+
+​		
 
 **Técnicas e Tecnologias utilizadas** **durante o projeto** 
 
@@ -47,13 +94,6 @@ Readme : Versão 1.1 - em construção
 
 - Repository : classe extende os metodos de persistencia do JPA
 
-  
-
-**Acesso ao site** 
-
-- Carregar projeto no Intellij ou em sua IDE preferida
-- Rodar a classe "*AbrigagatosApplication*" em *src/main/java/com/br/senai/pi/abrigagatos/*
-- No browse carregar "*Localhost:8080/index"*
 
 
 

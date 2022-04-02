@@ -88,6 +88,15 @@ public class AbrigaController {
         return "redirect:/parceiros";
     }
 
+    // salvar na area de administração
+    // retornando para lista
+    @PostMapping("/saveParceiroAdm")
+    public String saveParceiroAdm(@ModelAttribute("parceiro") Parceiro parceiro) {
+        // salva parceiro no banco de dados
+        parceiroService.saveParceiro(parceiro);
+        return "redirect:/listaParceiros";
+    }
+
     @GetMapping("/atualizarParceiro/{id}")
     public String showFormForUpdate(@PathVariable(value = "id") long id, Model model) {
 
