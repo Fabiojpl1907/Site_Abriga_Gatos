@@ -89,7 +89,7 @@
         <!-- titulo pagina  -->
         <div class="row justify-content-start">
             <div class="col">
-                <p class="lema">Cadastro</p>
+                <p class="lema">Cadastro de Parceiros</p>
             </div>
 
         </div>
@@ -106,36 +106,18 @@
                 <form action="#" method="POST" th:action="@{/saveParceiro}"  th:object="${parceiro}">
                     <input class="form-control mb-4 col-4" placeholder="Nome Completo" th:field="*{nomeCompleto}" type="text">
 
-                    <input class="form-control mb-4 col-4" placeholder="Sobrenome" th:field="*{lastName}" type="text">
+                    <input class="form-control mb-4 col-4" placeholder="CPF / CNPJ" th:field="*{cpfcnpj}" type="text">
+
+                    <input class="form-control mb-4 col-4" placeholder="Telefone de contato" th:field="*{telefone}" type="text">
 
                     <input class="form-control mb-4 col-4" placeholder="Email" th:field="*{email}" type="text">
 
                     <button class="btn btn-info col-3" type="submit"> Salvar Parceiro</button>
                 </form>
 
-
             </div>
 
-            <div class="col-12 col-md-4" id="Elemento_2">
-                
-                <h4 class="chamadas">Endereço</h4><br>
-
-
-
-            </div>
         </div>
-
-<!--        <div class="row mb-2 quadro-bege justify-content-center" id="linha2">-->
-
-<!--            <div class="col-12 col-md-2 m-2" id="Elemento_5">-->
-<!--                <button type="button" class="botao" onclick="return validar_tudo();">Validar Formulário</button>-->
-<!--            </div>-->
-
-<!--            <div class="col-12 col-md-2 m-2" id="Elemento_6">-->
-<!--                <button type="submit" id="assinar"   disabled class="botao" onclick="encerra()">Cadastrar</button>-->
-<!--            </div>-->
-
-<!--        </div>-->
 
     </div>
 

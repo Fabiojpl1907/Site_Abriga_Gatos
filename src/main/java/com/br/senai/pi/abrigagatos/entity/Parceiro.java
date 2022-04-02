@@ -29,7 +29,10 @@ public class Parceiro {
     private String nomeCompleto;
 
     @Column(name = "cpfcnpj")
-    private String lastName;
+    private String cpfcnpj;
+
+    @Column(name = "telefone")
+    private String telefone;
 
     @Column(name = "email")
     private String email;
