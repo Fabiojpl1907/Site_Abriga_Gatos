@@ -25,10 +25,10 @@ public class Parceiro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "first_name")
-    private String firstName;
+    @Column(name = "nome")
+    private String nomeCompleto;
 
-    @Column(name = "last_name")
+    @Column(name = "cpfcnpj")
     private String lastName;
 
     @Column(name = "email")

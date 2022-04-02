@@ -20,8 +20,8 @@
         <thead>
         <tr>
             <th>
-                <a th:href="@{'/page/' + ${currentPage} + '?sortField=firstName&sortDir=' + ${reverseSortDir}}">
-                    Primeiro Nome</a>
+                <a th:href="@{'/page/' + ${currentPage} + '?sortField=nomeCompleto&sortDir=' + ${reverseSortDir}}">
+                    Nome Completo</a>
             </th>
             <th>
                 <a th:href="@{'/page/' + ${currentPage} + '?sortField=lastName&sortDir=' + ${reverseSortDir}}">
@@ -36,7 +36,7 @@
         </thead>
         <tbody>
         <tr th:each="parceiro : ${listParceiros}">
-            <td th:text="${parceiro.firstName}"></td>
+            <td th:text="${parceiro.nomeCompleto}"></td>
             <td th:text="${parceiro.lastName}"></td>
             <td th:text="${parceiro.email}"></td>
             <td><a class="btn btn-primary" th:href="@{/atualizarParceiro/{id}(id=${parceiro.id})}">Update</a>

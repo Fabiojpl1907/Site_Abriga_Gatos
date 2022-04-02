@@ -68,7 +68,7 @@ public class AbrigaController {
     // listar parceiros
     @GetMapping("/listaParceiros")
     public String viewHomePage(Model model) {
-        return findPaginated(1, "firstName", "asc", model);
+        return findPaginated(1, "nomeCompleto", "asc", model);
     }
 
 
