@@ -60,6 +60,23 @@
                     Complemento</a>
             </th>
 
+            <th>
+                <a th:href="@{'/page/' + ${currentPage} + '?sortField=email&sortDir=' + ${reverseSortDir}}">
+                    Bairro</a>
+            </th>
+
+            <th>
+                <a th:href="@{'/page/' + ${currentPage} + '?sortField=email&sortDir=' + ${reverseSortDir}}">
+                    Cidade</a>
+            </th>
+
+            <th>
+                <a th:href="@{'/page/' + ${currentPage} + '?sortField=email&sortDir=' + ${reverseSortDir}}">
+                    Estado</a>
+            </th>
+
+
+
             <th> Actions</th>
         </tr>
         </thead>
@@ -74,6 +91,9 @@
             <td th:text="${parceiro.rua}"></td>
             <td th:text="${parceiro.numero}"></td>
             <td th:text="${parceiro.complemento}"></td>
+            <td th:text="${parceiro.bairro}"></td>
+            <td th:text="${parceiro.cidade}"></td>
+            <td th:text="${parceiro.estado}"></td>
 
             <td><a class="btn btn-primary" th:href="@{/atualizarParceiro/{id}(id=${parceiro.id})}">Update</a>
                 <a class="btn btn-danger" th:href="@{/deleteParceiro/{id}(id=${parceiro.id})}">Delete</a>
