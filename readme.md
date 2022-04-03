@@ -4,7 +4,7 @@
 
 <img src="https://s2.loli.net/2022/04/01/ZXzf2mxcRT6UvbO.png" alt="Abriga_Gatos" style="zoom:30%;" />
 
-Readme : Versão 1.1 - em construção 
+Readme e sistema :  em construção 
 
 **Objetivo do Site** : Apresentar e gerir trabalhos de uma ONG cujo a ação é retirar gatos da rua , dando um lugar mais adequados a segurança de vidas dos animais. 
 
@@ -32,18 +32,33 @@ Readme : Versão 1.1 - em construção
 
 ​						apresenta um modal construido em javascript que traz o motivo de abrigar os gatos de rua. 
 
-​		*Parceiros* - apresenta informações sobre os parceiros.
+​		
 
-​				contem a funcionalidade Cadastro - para cadastro de parceiros desenvolvida em
-​																				 java/mvc/persistencia em banco de dados
+​		*Parceiros* - Apresenta informações sobre os parceiros e permite cadastro de novos parceiros.
+
+​				O cadastro de novos parceiros esta estruturado em  : 
+
+​					java + mvc+ persistencia  de dados
+
+​					validar preenchimento dos campos -  javascript
+
+​					validar CPF / CNPJ -  javascript
+
+​					pesquisar endereço a partir do cep - javascript
+
+​		
 
 ​		*Doações* - Pagina que apresenta as varias formas de doações que podem ser feitas . 
 
 ​						Montada com  Modal do Bootstrap. 
 
+
+
 ​		*Contato* - Apresenta formas de contato com Abriga Gatos 
 
 ​						Formulario de contato desenvolvido em HTML ( <form> )
+
+
 
 ​		*Quem somos* -  em construção - mostrará dados sobre a empresa
 
