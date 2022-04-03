@@ -36,4 +36,21 @@ public class Parceiro {
 
     @Column(name = "email")
     private String email;
+
+    @Column(name = "tipo")
+    private String tipoParceria;
+
+    @Column(name = "cep")
+    private String cep;
+
+    @Column(name = "rua")
+    private String rua;
+
+    @Column(name = "numero")
+    private String numero;
+
+    @Column(name = "complemento")
+    private String complemento;
+
+
 }
