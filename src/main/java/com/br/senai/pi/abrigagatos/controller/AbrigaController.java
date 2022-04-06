@@ -65,6 +65,8 @@ public class AbrigaController {
     }
 
 
+
+
     // listar parceiros
     @GetMapping("/listaParceiros")
     public String viewHomePage(Model model) {
