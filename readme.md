@@ -79,6 +79,7 @@ Readme e sistema :  em construção
 - HTML
 -  Bootstrap 5 
 - CSS
+- Google Fonts
 - JavaScript
 - Spring Boot 2.6.6
 
@@ -93,6 +94,7 @@ Readme e sistema :  em construção
 - Lombok
 - Banco de Dados Mysql
 - JPA 
+- Javax
 - Web Server Tomcat
 - IDE Intellij Community 202103
 - Editor VSCode
