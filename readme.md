@@ -1,8 +1,10 @@
 **Abriga Gatos - Projeto Integrador - Final** 
 
-
-
 <img src="https://s2.loli.net/2022/04/06/xn5fLWwQHtMe2ph.png" alt="Abriga_Gatos" style="zoom:30%;" />
+
+*Resumo ( Via ChatGPT)
+O projeto Abriga Gatos visa criar um site para a gestão e apresentação dos trabalhos de uma ONG dedicada ao resgate de gatos de rua, oferecendo um ambiente seguro para os animais. Desenvolvido por Fábio José Pereira Lima como parte do curso de Técnico de Informática em Internet (Full Stack) no SENAI Anchieta, o site utiliza tecnologias como Java, Spring Boot, MySQL, Bootstrap e API REST. A plataforma permite cadastro de parceiros, gerenciamento de doações e administração da ONG. O código-fonte está disponível no GitHub e o acesso ao sistema ocorre via localhost:8080 em diferentes seções para usuários e administradores.
+
 
 **Aluno** : Fábio José Pereira Lima
 
